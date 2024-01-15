@@ -5,7 +5,7 @@ FROM openjdk:11
 WORKDIR /app
 
 # Copy the JAR file into the container
-COPY target/simple_todo_be-0.0.1-SNAPSHOT.jar app.jar
+COPY build/libs/simple_todo_be-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port on which the app will run
 EXPOSE 8080
